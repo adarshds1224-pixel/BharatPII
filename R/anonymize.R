@@ -4,7 +4,7 @@
 # of the characters are ever left visible, so short values are still masked.
 mask_one <- function(s, keep) {
   ch <- strsplit(s, "", fixed = TRUE)[[1L]]
-  if (length(ch) == 0L) return(s)
+  # if (length(ch) == 0L) return(s)
   pos <- which(grepl("[[:alnum:]]", ch))
   n <- length(pos)
   keep_eff <- min(keep, n %/% 2L)

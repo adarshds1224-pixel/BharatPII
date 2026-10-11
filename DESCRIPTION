@@ -18,8 +18,8 @@ Description: Detects and structurally validates Indian personal
     Personal Data Protection (DPDP) Act, 2023. Validity checks do not
     prove that an identifier was ever issued.
 License: MIT + file LICENSE
-URL: https://github.com/adarshds1224-pixel/bharatPII
-BugReports: https://github.com/adarshds1224-pixel/bharatPII/issues
+URL: https://github.com/adarshds1224-pixel/BharatPII
+BugReports: https://github.com/adarshds1224-pixel/BharatPII/issues
 Depends:
     R (>= 4.1.0)
 Imports:

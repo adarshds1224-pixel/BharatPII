@@ -17,12 +17,12 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Vaisnavi Sabarish \email{vaisnavisabarish2@gmail.com}
+\strong{Maintainer}: Adarsh S P L \email{adarshds1224@gmail.com}
 
 Authors:
 \itemize{
-  \item Vaisnavi Sabarish \email{vaisnavisabarish2@gmail.com}
   \item Adarsh S P L \email{adarshds1224@gmail.com}
+  \item Vaisnavi Sabarish \email{vaisnavisabarish2@gmail.com}
 }
 
 }

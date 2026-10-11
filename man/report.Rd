@@ -47,9 +47,12 @@ package-defined technical assessments, not legal advice or certification
 of compliance with the Digital Personal Data Protection Act, 2023.
 }
 \examples{
-\dontrun{
-audit <- pii_scan(data.frame(mobile = c("9876543210", "8123456789")))
-report(audit)
+if (requireNamespace("rmarkdown", quietly = TRUE) &&
+    requireNamespace("knitr", quietly = TRUE) &&
+    rmarkdown::pandoc_available()) {
+  audit <- pii_scan(data.frame(mobile = c("9876543210", "8123456789")))
+  path <- report(audit)
+  file.exists(path)
 }
 }
 \seealso{

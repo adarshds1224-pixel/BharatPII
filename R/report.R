@@ -28,9 +28,12 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
-#' audit <- pii_scan(data.frame(mobile = c("9876543210", "8123456789")))
-#' report(audit)
+#' if (requireNamespace("rmarkdown", quietly = TRUE) &&
+#'     requireNamespace("knitr", quietly = TRUE) &&
+#'     rmarkdown::pandoc_available()) {
+#'   audit <- pii_scan(data.frame(mobile = c("9876543210", "8123456789")))
+#'   path <- report(audit)
+#'   file.exists(path)
 #' }
 report <- function(audit, format = c("html", "pdf"),
                    output_file = NULL, output_dir = tempdir(),
@@ -55,23 +58,23 @@ report <- function(audit, format = c("html", "pdf"),
   format <- match.arg(format)
 
   if (!requireNamespace("rmarkdown", quietly = TRUE)) {
-    cli::cli_abort(
+    cli::cli_abort(c(
       "Package {.pkg rmarkdown} is required to generate reports.",
       "i" = "Install it with {.code install.packages(\"rmarkdown\")}."
-    )
+    ))
   }
   if (!requireNamespace("knitr", quietly = TRUE)) {
-    cli::cli_abort(
+    cli::cli_abort(c(
       "Package {.pkg knitr} is required to generate reports.",
       "i" = "Install it with {.code install.packages(\"knitr\")}."
-    )
+    ))
   }
 
   if (format == "pdf" && !nzchar(Sys.which("pdflatex"))) {
-    cli::cli_abort(
+    cli::cli_abort(c(
       "PDF output requires a working {.code pdflatex} executable.",
       "i" = "Install a LaTeX distribution or use {.code format = \"html\"}."
-    )
+    ))
   }
 
   if (!is.character(output_dir) || length(output_dir) != 1L ||
@@ -124,10 +127,10 @@ report <- function(audit, format = c("html", "pdf"),
     }
   }
   if (!file.exists(template)) {
-    cli::cli_abort(
+    cli::cli_abort(c(
       "The installed report template could not be found.",
       "i" = "Reinstall or reload the package after creating its template."
-    )
+    ))
   }
 
   risk_summary <- function(x) {

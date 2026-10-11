@@ -2,11 +2,11 @@ Package: bharatpii
 Title: Indian Identifier Detection and Privacy Auditing
 Version: 0.0.0.9000
 Authors@R: c(
-    person("Vaisnavi", "Sabarish",
-           email = "vaisnavisabarish2@gmail.com",
-           role = c("aut", "cre")),
     person("Adarsh", "S P L",
            email = "adarshds1224@gmail.com",
+           role = c("aut", "cre")),
+    person("Vaisnavi", "Sabarish",
+           email = "vaisnavisabarish2@gmail.com",
            role = "aut")
   )
 Description: Detects and structurally validates Indian personal

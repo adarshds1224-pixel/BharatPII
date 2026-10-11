@@ -9,6 +9,9 @@ knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 
 # bharatpii
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/adarshds1224-pixel/BharatPII/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/adarshds1224-pixel/BharatPII/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
 
 `bharatpii` detects and structurally validates Indian personal identifiers in
 data frames (Aadhaar, PAN, GSTIN, IFSC, UPI VPA, mobile numbers, PIN codes and

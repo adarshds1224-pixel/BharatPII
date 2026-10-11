@@ -3,6 +3,11 @@
 
 # bharatpii
 
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/adarshds1224-pixel/BharatPII/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/adarshds1224-pixel/BharatPII/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 `bharatpii` detects and structurally validates Indian personal
 identifiers in data frames (Aadhaar, PAN, GSTIN, IFSC, UPI VPA, mobile
 numbers, PIN codes and Voter ID), estimates k-anonymity
@@ -112,7 +117,7 @@ folder unless you give `output_dir`:
 ``` r
 path <- report(audit, reid = risk, score = dpdp_score(audit, risk))
 path
-#> [1] "C:/Users/Adars/AppData/Local/Temp/RtmpGm8eji/bharatpii-audit-4b685d3e712b.html"
+#> [1] "C:/Users/Adars/AppData/Local/Temp/RtmpeUSyCJ/bharatpii-audit-77b82abb452.html"
 ```
 
 ## Features

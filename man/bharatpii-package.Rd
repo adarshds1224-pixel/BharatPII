@@ -11,8 +11,8 @@ Detects and structurally validates Indian personal identifiers in data frames, i
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/adarshds1224-pixel/bharatPII}
-  \item Report bugs at \url{https://github.com/adarshds1224-pixel/bharatPII/issues}
+  \item \url{https://github.com/adarshds1224-pixel/BharatPII}
+  \item Report bugs at \url{https://github.com/adarshds1224-pixel/BharatPII/issues}
 }
 
 }

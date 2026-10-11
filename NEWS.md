@@ -1,4 +1,4 @@
-# BharatPII 0.1.0
+# bharatpii 0.1.0
 
 * Initial development version.
 * Added detectors: `detect_aadhaar()`, `detect_pan()`, `detect_gstin()`,

@@ -8,8 +8,16 @@
 
 0 errors | 0 warnings | 0 notes locally and on GitHub Actions.
 
-win-builder (R-devel) reports 1 NOTE: this is a new submission, and
-the maintainer address is checked as part of that.
+win-builder (R-devel) reported 1 NOTE:
+
+* This is a new submission.
+* The words flagged as possibly misspelled in DESCRIPTION are proper
+  nouns and acronyms, not typos: Aadhaar (India's national identity
+  number), DPDP (Digital Personal Data Protection Act), GSTIN (Goods and
+  Services Tax Identification Number), IFSC (Indian Financial System
+  Code) and Verhoeff (the checksum algorithm used by Aadhaar).
+* The version number was changed from 0.0.0.9000 to 0.1.0 after that
+  check, to address the note about large version components.
 
 ## Notes
 

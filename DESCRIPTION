@@ -1,6 +1,6 @@
 Package: bharatpii
 Title: Indian Identifier Detection and Privacy Auditing
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: c(
     person("Adarsh", "S P L",
            email = "adarshds1224@gmail.com",
